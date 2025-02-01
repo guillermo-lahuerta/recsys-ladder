@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "recsys-ladder"
+version = "0.1.0"
+description = "Exploring Recommender Systems from the simplest baseline to cutting-edge techniques"
+authors = ["Guillermo Lahuerta"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^4.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
