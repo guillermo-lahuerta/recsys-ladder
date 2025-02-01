@@ -28,3 +28,36 @@ This repository is organized into phases or "steps" on the Recsys Ladder:
 10. **LLM-based models**: Enhances recommendations and explainability with large language models (LLMs). It uses LLM embeddings and natural language explanations to boost system quality and user trust.
 
 Each phase includes notebooks, scripts, and documentation explaining the methodology, key results, and next steps.
+
+
+# Environment setup
+
+- Make sure you have Python 3.11 installed:
+
+```shell
+which python3.11
+```
+
+- If you don't have it, please install it with `brew` (assuming you are running your code on MacOs):
+
+```shell
+brew install python@3.11
+```
+
+- If you don't have Poetry already installed, do:
+
+```shell
+curl -sSL https://install.python-poetry.org | python3.11 -
+```
+
+- Confirm that Poetry exists:
+
+```shell
+poetry --version
+```
+
+- Install dependencies:
+
+```shell
+poetry install
+```
