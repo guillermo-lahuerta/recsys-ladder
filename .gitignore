@@ -137,8 +137,9 @@ dmypy.json
 # macOS
 .DS_Store
 
-# data folder
-/data/
+# data
+data/raw/
+data/processed/
 *.csv
 
 # testing

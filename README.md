@@ -30,6 +30,23 @@ This repository is organized into phases or "steps" on the Recsys Ladder:
 Each phase includes notebooks, scripts, and documentation explaining the methodology, key results, and next steps.
 
 
+## Project Structure
+
+The project uses the following data directory structure:
+
+```
+data/
+├── raw/        # Original, immutable data
+├── processed/  # Cleaned and transformed data
+└── interim/    # Intermediate transformations
+```
+
+- `raw`: Contains the original, immutable data dumps. This data should never be modified.
+- `processed`: Stores cleaned and transformed datasets ready for modeling.
+- `interim`: Houses intermediate data that has been transformed but is not yet ready for modeling.
+
+
+
 # Environment setup
 
 - Make sure you have Python 3.11 installed:
@@ -61,3 +78,13 @@ poetry --version
 ```shell
 poetry install
 ```
+
+## Datasets
+
+### MovieLens 100K Dataset
+
+For the initial experiments and baseline models, this project uses the [**MovieLens 100K**](https://grouplens.org/datasets/movielens/100k/) dataset—a widely adopted benchmark in recommender systems research.
+
+The MovieLens 100K dataset contains 100,000 ratings from 943 users on 1,682 movies. It includes not only user ratings but also movie titles, genres, and timestamps, providing a rich source of information for various recommender system methods.
+
+This dataset lays the foundation for exploring various recommendation approaches in the early phases of the Recsys Ladder.
